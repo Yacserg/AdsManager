@@ -1,0 +1,577 @@
+/* Базові стилі */
+
+*,
+
+*::before,
+
+*::after {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+
+
+body {
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+
+    Roboto, sans-serif;
+
+  color: #212121;
+
+  background-color: #e8f5ee;
+
+  line-height: 1.6;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+
+
+/* Контейнер оголошення */
+
+.ad-container {
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
+  min-height: 100vh;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Хедер */
+
+.ad-header {
+
+  background-color: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  padding: 0.4rem 1.5rem;
+
+}
+
+
+
+.logo {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 0.75rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  color: #212121;
+
+}
+
+
+
+.logo-image {
+
+  height: 35px;
+
+  width: auto;
+
+  display: block;
+
+}
+
+
+
+.logo-mark {
+
+  width: 30px;
+
+  height: 30px;
+
+  border-radius: 9999px;
+
+  background: #4CAF50;
+
+  color: #ffffff;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-weight: 800;
+
+  font-size: 0.9rem;
+
+}
+
+
+
+.logo-text {
+
+  font-size: 0.85rem;
+
+}
+
+
+
+/* Основний контент оголошення */
+
+.ad-content {
+
+  padding: 2rem 1.5rem;
+
+}
+
+
+
+.ad-content h1 {
+
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+
+  margin-bottom: 1rem;
+
+  color: #212121;
+
+  line-height: 1.2;
+
+}
+
+
+
+.text-accent {
+
+  color: #4CAF50;
+
+}
+
+
+
+.ad-lead {
+
+  font-size: 1.1rem;
+
+  color: #424242;
+
+  margin-bottom: 2rem;
+
+  line-height: 1.7;
+
+}
+
+
+
+.ad-lead strong {
+
+  color: #212121;
+
+  font-weight: 600;
+
+}
+
+
+
+/* Сітка з інформацією */
+
+.ad-info-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1.25rem;
+
+  margin-bottom: 2rem;
+
+}
+
+
+
+.info-card {
+
+  background-color: #f9fafb;
+
+  border-radius: 0.75rem;
+
+  padding: 1.25rem;
+
+  border: 1px solid #e5e7eb;
+
+}
+
+
+
+.info-card h3 {
+
+  font-size: 1.1rem;
+
+  margin-bottom: 0.75rem;
+
+  color: #4CAF50;
+
+}
+
+
+
+.info-card p {
+
+  font-size: 0.95rem;
+
+  color: #424242;
+
+  line-height: 1.6;
+
+}
+
+
+
+.info-card strong {
+
+  color: #212121;
+
+}
+
+
+
+/* Деталі */
+
+.ad-details {
+
+  margin-bottom: 2.5rem;
+
+}
+
+
+
+.detail-item {
+
+  margin-bottom: 1.5rem;
+
+  padding-bottom: 1.5rem;
+
+  border-bottom: 1px solid #e5e7eb;
+
+}
+
+
+
+.detail-item:last-child {
+
+  border-bottom: none;
+
+  margin-bottom: 0;
+
+  padding-bottom: 0;
+
+}
+
+
+
+.detail-item h3 {
+
+  font-size: 1.1rem;
+
+  margin-bottom: 0.5rem;
+
+  color: #4CAF50;
+
+}
+
+
+
+.detail-item p {
+
+  font-size: 0.95rem;
+
+  color: #424242;
+
+  line-height: 1.7;
+
+}
+
+
+
+.detail-item strong {
+
+  color: #212121;
+
+  font-weight: 600;
+
+}
+
+
+
+/* CTA секція */
+
+.ad-cta {
+
+  background-color: #e8f5ee;
+
+  border-radius: 0.75rem;
+
+  padding: 2rem;
+
+  text-align: center;
+
+  margin-bottom: 1.5rem;
+
+}
+
+
+
+.ad-cta h2 {
+
+  font-size: 1.5rem;
+
+  margin-bottom: 0.5rem;
+
+  color: #212121;
+
+}
+
+
+
+.ad-cta p {
+
+  font-size: 0.95rem;
+
+  color: #424242;
+
+  margin-bottom: 1.5rem;
+
+}
+
+
+
+/* Кнопки */
+
+.btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0.75rem 2rem;
+
+  border-radius: 9999px;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  border: none;
+
+  transition: transform 0.08s ease, box-shadow 0.08s ease,
+
+    background-color 0.15s ease, color 0.15s ease;
+
+}
+
+
+
+.btn:active {
+
+  transform: translateY(1px);
+
+  box-shadow: none;
+
+}
+
+
+
+.primary-btn {
+
+  background-color: #4CAF50;
+
+  color: #ffffff;
+
+  box-shadow: 0 10px 20px -12px rgba(76, 175, 80, 0.6);
+
+}
+
+
+
+.primary-btn:hover {
+
+  background-color: #45a049;
+
+}
+
+
+
+/* Футер */
+
+.ad-footer {
+
+  text-align: center;
+
+  padding: 1rem 1.5rem;
+
+  border-top: 1px solid #e5e7eb;
+
+  background-color: #f9fafb;
+
+}
+
+
+
+.ad-footer p {
+
+  font-size: 0.85rem;
+
+  color: #6b7280;
+
+  margin: 0;
+
+}
+
+
+
+/* --- МОБІЛЬНА АДАПТАЦІЯ --- */
+
+@media (max-width: 768px) {
+
+  .ad-container {
+
+    box-shadow: none;
+
+  }
+
+
+
+  .ad-content {
+
+    padding: 1.5rem 1rem;
+
+  }
+
+
+
+  .ad-content h1 {
+
+    font-size: 1.75rem;
+
+  }
+
+
+
+  .ad-lead {
+
+    font-size: 1rem;
+
+  }
+
+
+
+  .ad-info-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+
+  }
+
+
+
+  .ad-cta {
+
+    padding: 1.5rem 1rem;
+
+  }
+
+
+
+  .ad-cta h2 {
+
+    font-size: 1.3rem;
+
+  }
+
+
+
+  .primary-btn {
+
+    width: 100%;
+
+    padding: 0.9rem;
+
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .ad-header {
+
+    padding: 0.75rem 1rem;
+
+  }
+
+
+
+  .ad-content {
+
+    padding: 1.25rem 1rem;
+
+  }
+
+
+
+  .ad-content h1 {
+
+    font-size: 1.5rem;
+
+  }
+
+
+
+  .info-card,
+
+  .detail-item {
+
+    padding: 1rem;
+
+  }
+
+
+
+  .ad-cta {
+
+    padding: 1.25rem 1rem;
+
+  }
+
+}
